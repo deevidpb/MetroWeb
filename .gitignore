@@ -1,0 +1,53 @@
+.idea/
+# v0 sandbox internal files
+spa/__v0_runtime_loader.js
+spa/__v0_devtools.tsx
+spa/__v0_jsx-dev-runtime.ts
+spa/.snowflake/
+spa/.v0-trash/
+spa/.vercel/
+
+# Environment variables
+spa/.env*.local
+
+# Common ignores
+spa/node_modules
+spa/.next/
+spa/.DS_Store
+
+### VS Code ###
+rws/.vscode/
+
+
+rws/HELP.md
+rws/target/
+rws/.mvn/wrapper/maven-wrapper.jar
+rws/!**/src/main/**/target/
+rws/!**/src/test/**/target/
+
+### STS ###
+rws/.apt_generated
+rws/.classpath
+rws/.factorypath
+rws/.project
+rws/.settings
+rws/.springBeans
+rws/.sts4-cache
+
+### IntelliJ IDEA ###
+rws/.idea
+rws/*.iws
+rws/*.iml
+rws/*.ipr
+
+### NetBeans ###
+rws/nbproject/private/
+rws/nbbuild/
+rws/dist/
+rws/nbdist/
+rws/.nb-gradle/
+rws/build/
+rws/!**/src/main/**/build/
+rws/!**/src/test/**/build/
+
+Metro.iml

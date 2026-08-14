@@ -1,0 +1,2045 @@
+[
+  {
+    "id": "581",
+    "name": "Pinar de Chamartín",
+    "lines": [
+      "Línea 1",
+      "Línea 4",
+      "ML1"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "438",
+    "name": "Bambú",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "461",
+    "name": "Chamartín",
+    "lines": [
+      "Línea 1",
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "586",
+    "name": "Plaza de Castilla",
+    "lines": [
+      "Línea 1",
+      "Línea 9",
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "637",
+    "name": "Valdeacederas",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "629",
+    "name": "Tetuán",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "490",
+    "name": "Estrecho",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "418",
+    "name": "Alvarado",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "475",
+    "name": "Cuatro Caminos",
+    "lines": [
+      "Línea 1",
+      "Línea 2",
+      "Línea 6"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "605",
+    "name": "Ríos Rosas",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "514",
+    "name": "Iglesia",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "447",
+    "name": "Bilbao",
+    "lines": [
+      "Línea 1",
+      "Línea 4"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "633",
+    "name": "Tribunal",
+    "lines": [
+      "Línea 1",
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "501",
+    "name": "Gran Vía",
+    "lines": [
+      "Línea 1",
+      "Línea 5"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "627",
+    "name": "Sol",
+    "lines": [
+      "Línea 1",
+      "Línea 2",
+      "Línea 3"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "630",
+    "name": "Tirso de Molina",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "420",
+    "name": "Antón Martín",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "431",
+    "name": "Estación del Arte",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "432",
+    "name": "Atocha",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "553",
+    "name": "Menéndez Pelayo",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "568",
+    "name": "Pacífico",
+    "lines": [
+      "Línea 1",
+      "Línea 6"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "595",
+    "name": "Puente de Vallecas",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "561",
+    "name": "Nueva Numancia",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "589",
+    "name": "Portazgo",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "449",
+    "name": "Buenos Aires",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "416",
+    "name": "Alto del Arenal",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "555",
+    "name": "Miguel Hernández",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "625",
+    "name": "Sierra de Guadalupe",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "646",
+    "name": "Villa de Vallecas",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "471",
+    "name": "Congosto",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "523",
+    "name": "La Gavia",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "535",
+    "name": "Las Suertes",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "639",
+    "name": "Valdecarros",
+    "lines": [
+      "Línea 1"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "534",
+    "name": "Las Rosas",
+    "lines": [
+      "Línea 2"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "434",
+    "name": "Avenida de Guadalajara",
+    "lines": [
+      "Línea 2"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "414",
+    "name": "Alsacia",
+    "lines": [
+      "Línea 2"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "520",
+    "name": "La Almudena",
+    "lines": [
+      "Línea 2"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "521",
+    "name": "La Elipa",
+    "lines": [
+      "Línea 2"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "642",
+    "name": "Ventas",
+    "lines": [
+      "Línea 2",
+      "Línea 5"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "545",
+    "name": "Manuel Becerra",
+    "lines": [
+      "Línea 2",
+      "Línea 6"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "500",
+    "name": "Goya",
+    "lines": [
+      "Línea 2",
+      "Línea 4"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "591",
+    "name": "Príncipe de Vergara",
+    "lines": [
+      "Línea 2",
+      "Línea 9"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "603",
+    "name": "Retiro",
+    "lines": [
+      "Línea 2"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "439",
+    "name": "Banco de España",
+    "lines": [
+      "Línea 2"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "624",
+    "name": "Sevilla",
+    "lines": [
+      "Línea 2"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "566",
+    "name": "Ópera",
+    "lines": [
+      "Línea 2",
+      "Línea 5",
+      "Ramal"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "622",
+    "name": "Santo Domingo",
+    "lines": [
+      "Línea 2"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "560",
+    "name": "Noviciado",
+    "lines": [
+      "Línea 2"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "612",
+    "name": "San Bernardo",
+    "lines": [
+      "Línea 2",
+      "Línea 4"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "600",
+    "name": "Quevedo",
+    "lines": [
+      "Línea 2"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "452",
+    "name": "Canal",
+    "lines": [
+      "Línea 2",
+      "Línea 7"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "485",
+    "name": "El Casar",
+    "lines": [
+      "Línea 3",
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "647",
+    "name": "Villaverde Alto",
+    "lines": [
+      "Línea 3"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "615",
+    "name": "San Cristóbal",
+    "lines": [
+      "Línea 3"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "648",
+    "name": "Villaverde Bajo-Cruce",
+    "lines": [
+      "Línea 3"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "463",
+    "name": "Ciudad de los Ángeles",
+    "lines": [
+      "Línea 3"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "616",
+    "name": "San Fermín-Orcasur",
+    "lines": [
+      "Línea 3"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "512",
+    "name": "Hospital 12 de Octubre",
+    "lines": [
+      "Línea 3"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "410",
+    "name": "Almendrales",
+    "lines": [
+      "Línea 3"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "539",
+    "name": "Legazpi",
+    "lines": [
+      "Línea 3",
+      "Línea 6"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "478",
+    "name": "Delicias",
+    "lines": [
+      "Línea 3"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "571",
+    "name": "Palos de la Frontera",
+    "lines": [
+      "Línea 3"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "486",
+    "name": "Embajadores",
+    "lines": [
+      "Línea 3"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "537",
+    "name": "Lavapiés",
+    "lines": [
+      "Línea 3"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "450",
+    "name": "Callao",
+    "lines": [
+      "Línea 3",
+      "Línea 5"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "587",
+    "name": "Plaza de España",
+    "lines": [
+      "Línea 3",
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "644",
+    "name": "Ventura Rodríguez",
+    "lines": [
+      "Línea 3"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "425",
+    "name": "Argüelles",
+    "lines": [
+      "Línea 3",
+      "Línea 4",
+      "Línea 6"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "557",
+    "name": "Moncloa",
+    "lines": [
+      "Línea 3",
+      "Línea 6"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "413",
+    "name": "Alonso Martínez",
+    "lines": [
+      "Línea 4",
+      "Línea 5",
+      "Línea 10"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "467",
+    "name": "Colón",
+    "lines": [
+      "Línea 4"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "623",
+    "name": "Serrano",
+    "lines": [
+      "Línea 4"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "641",
+    "name": "Velázquez",
+    "lines": [
+      "Línea 4"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "540",
+    "name": "Lista",
+    "lines": [
+      "Línea 4"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "479",
+    "name": "Diego de León",
+    "lines": [
+      "Línea 4",
+      "Línea 5",
+      "Línea 6"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "433",
+    "name": "Avenida de América",
+    "lines": [
+      "Línea 4",
+      "Línea 6",
+      "Línea 7",
+      "Línea 9"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "593",
+    "name": "Prosperidad",
+    "lines": [
+      "Línea 4"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "409",
+    "name": "Alfonso XIII",
+    "lines": [
+      "Línea 4"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "436",
+    "name": "Avenida de La Paz",
+    "lines": [
+      "Línea 4"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "429",
+    "name": "Arturo Soria",
+    "lines": [
+      "Línea 4"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "488",
+    "name": "Esperanza",
+    "lines": [
+      "Línea 4"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "453",
+    "name": "Canillas",
+    "lines": [
+      "Línea 4"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "548",
+    "name": "Mar de Cristal",
+    "lines": [
+      "Línea 4",
+      "Línea 8"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "619",
+    "name": "San Lorenzo",
+    "lines": [
+      "Línea 4"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "576",
+    "name": "Parque de Santa María",
+    "lines": [
+      "Línea 4"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "506",
+    "name": "Hortaleza",
+    "lines": [
+      "Línea 4"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "544",
+    "name": "Manoteras",
+    "lines": [
+      "Línea 4"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "407",
+    "name": "Alameda de Osuna",
+    "lines": [
+      "Línea 5"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "482",
+    "name": "El Capricho",
+    "lines": [
+      "Línea 5"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "454",
+    "name": "Canillejas",
+    "lines": [
+      "Línea 5"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "631",
+    "name": "Torre Arias",
+    "lines": [
+      "Línea 5"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "628",
+    "name": "Suanzes",
+    "lines": [
+      "Línea 5"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "464",
+    "name": "Ciudad Lineal",
+    "lines": [
+      "Línea 5"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "594",
+    "name": "Pueblo Nuevo",
+    "lines": [
+      "Línea 5",
+      "Línea 7"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "601",
+    "name": "Quintana",
+    "lines": [
+      "Línea 5"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "483",
+    "name": "El Carmen",
+    "lines": [
+      "Línea 5"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "563",
+    "name": "Núñez de Balboa",
+    "lines": [
+      "Línea 5",
+      "Línea 9"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "610",
+    "name": "Rubén Darío",
+    "lines": [
+      "Línea 5"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "462",
+    "name": "Chueca",
+    "lines": [
+      "Línea 5"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "525",
+    "name": "La Latina",
+    "lines": [
+      "Línea 5"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "597",
+    "name": "Puerta de Toledo",
+    "lines": [
+      "Línea 5"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "404",
+    "name": "Acacias",
+    "lines": [
+      "Línea 5"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "584",
+    "name": "Pirámides",
+    "lines": [
+      "Línea 5"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "551",
+    "name": "Marqués de Vadillo",
+    "lines": [
+      "Línea 5"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "635",
+    "name": "Urgel",
+    "lines": [
+      "Línea 5"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "567",
+    "name": "Oporto",
+    "lines": [
+      "Línea 5",
+      "Línea 6"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "651",
+    "name": "Vista Alegre",
+    "lines": [
+      "Línea 5"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "455",
+    "name": "Carabanchel",
+    "lines": [
+      "Línea 5"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "492",
+    "name": "Eugenia de Montijo",
+    "lines": [
+      "Línea 5"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "417",
+    "name": "Aluche",
+    "lines": [
+      "Línea 5"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "487",
+    "name": "Empalme",
+    "lines": [
+      "Línea 5"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "451",
+    "name": "Campamento",
+    "lines": [
+      "Línea 5"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "459",
+    "name": "Casa de Campo",
+    "lines": [
+      "Línea 5",
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "532",
+    "name": "Laguna",
+    "lines": [
+      "Línea 6"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "457",
+    "name": "Carpetana",
+    "lines": [
+      "Línea 6"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "565",
+    "name": "Opañel",
+    "lines": [
+      "Línea 6"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "588",
+    "name": "Plaza Elíptica",
+    "lines": [
+      "Línea 6",
+      "Línea 11"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "636",
+    "name": "Usera",
+    "lines": [
+      "Línea 6"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "424",
+    "name": "Arganzuela-Planetario",
+    "lines": [
+      "Línea 6"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "552",
+    "name": "Méndez Álvaro",
+    "lines": [
+      "Línea 6"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "470",
+    "name": "Conde de Casal",
+    "lines": [
+      "Línea 6"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "611",
+    "name": "Sainz de Baranda",
+    "lines": [
+      "Línea 6",
+      "Línea 9"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "564",
+    "name": "O´Donnell",
+    "lines": [
+      "Línea 6"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "602",
+    "name": "República Argentina",
+    "lines": [
+      "Línea 6"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "562",
+    "name": "Nuevos Ministerios",
+    "lines": [
+      "Línea 6",
+      "Línea 8",
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "503",
+    "name": "Guzmán el Bueno",
+    "lines": [
+      "Línea 6",
+      "Línea 7"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "554",
+    "name": "Vicente Aleixandre",
+    "lines": [
+      "Línea 6"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "465",
+    "name": "Ciudad Universitaria",
+    "lines": [
+      "Línea 6"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "592",
+    "name": "Príncipe Pío",
+    "lines": [
+      "Línea 6",
+      "Línea 10",
+      "Ramal"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "598",
+    "name": "Puerta del Ángel",
+    "lines": [
+      "Línea 6"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "415",
+    "name": "Alto de Extremadura",
+    "lines": [
+      "Línea 6"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "543",
+    "name": "Lucero",
+    "lines": [
+      "Línea 6"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "509",
+    "name": "Hospital del Henares",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "504",
+    "name": "Henares",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "516",
+    "name": "Jarama",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "617",
+    "name": "San Fernando",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "529",
+    "name": "La Rambla",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "473",
+    "name": "Coslada Central",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "443",
+    "name": "Barrio del Puerto",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "489",
+    "name": "Estadio Metropolitano",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "533",
+    "name": "Las Musas",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "613",
+    "name": "San Blas",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "626",
+    "name": "Simancas",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "498",
+    "name": "García Noblejas",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "430",
+    "name": "Ascao",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "441",
+    "name": "Barrio de la Concepción",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "573",
+    "name": "Parque de las Avenidas",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "458",
+    "name": "Cartagena",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "502",
+    "name": "Gregorio Marañón",
+    "lines": [
+      "Línea 7",
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "411",
+    "name": "Alonso Cano",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "515",
+    "name": "Islas Filipinas",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "494",
+    "name": "Francos Rodríguez",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "640",
+    "name": "Valdezarza",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "421",
+    "name": "Antonio Machado",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "580",
+    "name": "Peñagrande",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "435",
+    "name": "Avenida de la Ilustración",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "530",
+    "name": "Lacoma",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "2119",
+    "name": "Arroyofresno",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "585",
+    "name": "Pitis",
+    "lines": [
+      "Línea 7"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "466",
+    "name": "Colombia",
+    "lines": [
+      "Línea 8",
+      "Línea 9"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "582",
+    "name": "Pinar del Rey",
+    "lines": [
+      "Línea 8"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "493",
+    "name": "Feria de Madrid",
+    "lines": [
+      "Línea 8"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "405",
+    "name": "Aeropuerto T1-T2-T3",
+    "lines": [
+      "Línea 8"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "440",
+    "name": "Barajas",
+    "lines": [
+      "Línea 8"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "406",
+    "name": "Aeropuerto T-4",
+    "lines": [
+      "Línea 8"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "569",
+    "name": "Paco de Lucía",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "556",
+    "name": "Mirasierra",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "505",
+    "name": "Herrera Oria",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "442",
+    "name": "Barrio del Pilar",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "643",
+    "name": "Ventilla",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "480",
+    "name": "Duque de Pastrana",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "583",
+    "name": "Pío XII",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "469",
+    "name": "Concha Espina",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "474",
+    "name": "Cruz del Rayo",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "513",
+    "name": "Ibiza",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "491",
+    "name": "Estrella",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "649",
+    "name": "Vinateros",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "428",
+    "name": "Artilleros",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "579",
+    "name": "Pavones",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "638",
+    "name": "Valdebernardo",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "645",
+    "name": "Vicálvaro",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "614",
+    "name": "San Cipriano",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "596",
+    "name": "Puerta de Arganda",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "607",
+    "name": "Rivas Urbanizaciones",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "606",
+    "name": "Rivas Futura",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "608",
+    "name": "Rivas Vaciamadrid",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "528",
+    "name": "La Poveda",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "423",
+    "name": "Arganda del Rey",
+    "lines": [
+      "Línea 9"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "510",
+    "name": "Hospital Infanta Sofía",
+    "lines": [
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "604",
+    "name": "Reyes Católicos",
+    "lines": [
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "445",
+    "name": "Baunatal",
+    "lines": [
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "546",
+    "name": "Manuel de Falla",
+    "lines": [
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "550",
+    "name": "Marqués de la Valdavia",
+    "lines": [
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "526",
+    "name": "La Moraleja",
+    "lines": [
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "524",
+    "name": "La Granja",
+    "lines": [
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "609",
+    "name": "Ronda de la Comunicación",
+    "lines": [
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "536",
+    "name": "Las Tablas",
+    "lines": [
+      "Línea 10",
+      "ML1"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "558",
+    "name": "Montecarmelo",
+    "lines": [
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "632",
+    "name": "Tres Olivos",
+    "lines": [
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "495",
+    "name": "Fuencarral",
+    "lines": [
+      "Línea 10"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "446",
+    "name": "Begoña",
+    "lines": [
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "477",
+    "name": "Cuzco",
+    "lines": [
+      "Línea 10"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "621",
+    "name": "Santiago Bernabéu",
+    "lines": [
+      "Línea 10"
+    ],
+    "accesible": false
+  },
+  {
+    "id": "531",
+    "name": "Lago",
+    "lines": [
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "444",
+    "name": "Batán",
+    "lines": [
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "468",
+    "name": "Colonia Jardín",
+    "lines": [
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "437",
+    "name": "Aviación Española",
+    "lines": [
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "476",
+    "name": "Cuatro Vientos",
+    "lines": [
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "517",
+    "name": "Joaquín Vilumbrales",
+    "lines": [
+      "Línea 10"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "599",
+    "name": "Puerta del Sur",
+    "lines": [
+      "Línea 10",
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "403",
+    "name": "Abrantes",
+    "lines": [
+      "Línea 11"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "572",
+    "name": "Pan Bendito",
+    "lines": [
+      "Línea 11"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "618",
+    "name": "San Francisco",
+    "lines": [
+      "Línea 11"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "456",
+    "name": "Carabanchel Alto",
+    "lines": [
+      "Línea 11"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "527",
+    "name": "La Peseta",
+    "lines": [
+      "Línea 11"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "522",
+    "name": "La Fortuna",
+    "lines": [
+      "Línea 11"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "574",
+    "name": "Parque de Lisboa",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "408",
+    "name": "Alcorcón Central",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "578",
+    "name": "Parque Oeste",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "634",
+    "name": "Universidad Rey Juan Carlos",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "559",
+    "name": "Móstoles Central",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "590",
+    "name": "Pradillo",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "508",
+    "name": "Hospital de Móstoles",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "547",
+    "name": "Manuela Malasaña",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "541",
+    "name": "Loranca",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "507",
+    "name": "Hospital de Fuenlabrada",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "577",
+    "name": "Parque Europa",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "496",
+    "name": "Fuenlabrada Central",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "575",
+    "name": "Parque de los Estados",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "426",
+    "name": "Arroyo Culebro",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "472",
+    "name": "Conservatorio",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "412",
+    "name": "Alonso de Mendoza",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "499",
+    "name": "Getafe Central",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "518",
+    "name": "Juan de la Cierva",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "542",
+    "name": "Los Espartales",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "481",
+    "name": "El Bercial",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "484",
+    "name": "El Carrascal",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "519",
+    "name": "Julián Besteiro",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "460",
+    "name": "Casa del Reloj",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "511",
+    "name": "Hospital Severo Ochoa",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "538",
+    "name": "Leganés Central",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "620",
+    "name": "San Nicasio",
+    "lines": [
+      "Línea 12"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "497",
+    "name": "Fuente de la Mora",
+    "lines": [
+      "ML1"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "650",
+    "name": "Virgen del Cortijo",
+    "lines": [
+      "ML1"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "422",
+    "name": "Antonio Saura",
+    "lines": [
+      "ML1"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "419",
+    "name": "Álvarez de Villaamil",
+    "lines": [
+      "ML1"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "448",
+    "name": "Blasco Ibáñez",
+    "lines": [
+      "ML1"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "549",
+    "name": "María Tudor",
+    "lines": [
+      "ML1"
+    ],
+    "accesible": true
+  },
+  {
+    "id": "570",
+    "name": "Palas de Rey",
+    "lines": [
+      "ML1"
+    ],
+    "accesible": true
+  }
+]
