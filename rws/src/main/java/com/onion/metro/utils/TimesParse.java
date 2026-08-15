@@ -8,16 +8,12 @@ import org.jsoup.nodes.Element;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class TimesParse {
 
     public static List<Arrival> parseArrivals(String html) {
         Document document = Jsoup.parse(html);
-
         List<Arrival> arrivals = new ArrayList<>();
-
 
         for (Element station : document.select(
                 ".box__info-linea--estaciones .row > div")) {
@@ -27,6 +23,12 @@ public class TimesParse {
             Element wait = station.selectFirst(".tiempo-espera__minutos");
 
             if (icon == null || destination == null || wait == null) {
+                if(icon != null){
+                    String line = changeLine(icon.attr("alt")
+                            .replace("icono ", "")
+                            .trim());
+                    arrivals.add(new Arrival(line, "", "A la espera de previsión", "unavailable"));
+                }
                 continue;
             }
 
@@ -55,7 +57,6 @@ public class TimesParse {
                     status
             ));
         }
-
         return arrivals;
     }
 
@@ -66,7 +67,7 @@ public class TimesParse {
             case "linea-3" -> "Línea 3";
             case "linea-4" -> "Línea 4";
             case "linea-5" -> "Línea 5";
-            case "linea-6" -> "Línea 6";
+            case "linea-6-circular" -> "Línea 6";
             case "linea-7" -> "Línea 7";
             case "linea-8" -> "Línea 8";
             case "linea-9" -> "Línea 9";

@@ -8,6 +8,8 @@ import com.onion.metro.utils.TimesParse;
 import org.springframework.stereotype.Service;
 import tools.jackson.core.type.TypeReference;
 import tools.jackson.databind.ObjectMapper;
+
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -22,6 +24,9 @@ public class MetroService {
 
     public List<Arrival> getArrival(String stationId){
         MetroResponse response = metroClient.getTimes(stationId);
+        if (response == null){
+            return new ArrayList<>();
+        }
         return TimesParse.parseArrivals(response.data());
     }
 

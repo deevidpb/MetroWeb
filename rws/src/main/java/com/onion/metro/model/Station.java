@@ -6,5 +6,5 @@ public record Station(
    String id,
    String name,
    List<String> lines,
-   boolean accesible
+   boolean accessible
 ) {}

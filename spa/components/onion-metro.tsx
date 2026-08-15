@@ -40,7 +40,7 @@ function StationRow({station, active, favorite, onSelect, onToggle}: {
 }) {
     return <div className={`station-row ${active ? 'active' : ''}`}>
         <button className="station-row-main" onClick={onSelect}><span className="station-marker"><TrainFront size={15}/></span><span
-            className="station-name"><strong>{station.name}</strong><small>{station.lines.length} {station.lines.length === 1 ? 'line' : 'lines'}{station.accessible ? ' · accessible' : ''}</small></span><span
+            className="station-name"><strong>{station.name}</strong><small>{station.lines.length} {station.lines.length === 1 ? 'línea' : 'líneas'}{station.accessible ? ' · Accesible' : ''}</small></span><span
             className="line-stack">{station.lines.map((line) => <LineBadge key={line} line={line}/>)}</span><ArrowRight
             className="row-arrow" size={15}/></button>
         <FavoriteButton active={favorite} onClick={onToggle}
@@ -50,7 +50,7 @@ function StationRow({station, active, favorite, onSelect, onToggle}: {
 
 function ArrivalRow({arrival}: { arrival: Arrival }) {
     return <article className={`arrival-row ${arrival.status ?? ''}`}><LineBadge line={lineNumber(arrival.line)}/>
-        <div className="arrival-destination"><span>towards</span><strong>{arrival.destination}</strong></div>
+        <div className="arrival-destination">{arrival.destination != "" && (<span>Dirección</span>)}<strong>{arrival.destination}</strong></div>
         <div className={`arrival-time ${arrival.status ?? ''}`}><Clock3 size={14}/><strong>{arrival.time}</strong></div>
     </article>
 }
@@ -143,7 +143,6 @@ export default function OnionMetro() {
     }
 
     const lines = [...new Set(stations.flatMap((station) => station.lines))].sort((a, b) => Number(lineOrder(a)) - Number(lineOrder(b)))
-    // const matches = useMemo(() => query.trim() ? stations.filter((s) => s.name.toLowerCase().includes(query.toLowerCase())).slice(0, 6) : [], [query, stations])
     const matches = useMemo(() => {
         const trimmedQuery = query.trim();
         if (!trimmedQuery) return [];
@@ -176,74 +175,90 @@ export default function OnionMetro() {
     const favoriteStations = stations.filter((s) => favorites.includes(s.id)),
         recentStations = recents.map((id) => stations.find((s) => s.id === id)).filter(Boolean) as Station[]
     return <main className="onion-shell">
+
         <header className="topbar"><a className="brand" href="#top" aria-label="Onion Metro home"><span
             className="brand-mark"><span/><span/><span/></span><span>onion<span
             className="brand-dot">.</span>metro</span></a>
-            <nav><a className="nav-link active" href="#search">Search</a><a className="nav-link"
-                                                                            href="#favorites">Favorites <span
-                className="nav-count">{favorites.length}</span></a></nav>
+
             <div className="topbar-actions">
+                <nav>
+                    <a className="nav-link active" href="#search">Metro</a>
+                    {/*<a className="nav-link" href="#favorites">EMT</a>*/}
+                    {/*<a className="nav-link" href="#search">Cercanías</a>*/}
+                    {/*<a className="nav-link" href="#search">Interurbanos</a>*/}
+                    {/*<a className="nav-link" href="#search">Search</a>*/}
+                </nav>
+            </div>
+        </header>
+
+        <section className="hero" id="top">
+            <div className="eyebrow"><span className="eyebrow-line"/> METRO <img
+                src="/logo_metro.png"
+                alt="Logo Metro de Madrid"
+                className="metro-logo-separator"
+            />MADRID <span className="eyebrow-line"/></div>
+            <h1>Tu tren,<br/><em>está llegando</em></h1><p className="hero-copy">Próximo tren en tiempo real</p>
+            <div className="search-wrap" id="search" ref={searchWrapRef}><Search size={18}/><input value={query}
+                                                                                                   onChange={(e) => setQuery(e.target.value)}
+                                                                                                   placeholder="Busca una estación"
+                                                                                                   aria-label="Search for a station"
+                                                                                                   autoComplete="off"/>{query &&
+                <button className="clear-search" onClick={() => setQuery('')} aria-label="Clear search"><X size={16}/>
+                </button>}
                 <div className="directory-container" ref={directoryPanelRef}>
                     <button className={`directory-trigger ${directoryOpen ? 'open' : ''}`}
-                            onClick={() => setDirectoryOpen(!directoryOpen)}><ListFilter size={15}/> Stations <ChevronDown
+                            onClick={() => setDirectoryOpen(!directoryOpen)}><ListFilter
+                        size={15}/> Estaciones <ChevronDown
                         size={14}/></button>
                     {directoryOpen && <div className="directory-panel">
-                <div className="directory-head">
-                    <div><span className="section-kicker">NETWORK DIRECTORY</span><h2>Choose a station</h2></div>
-                    <button className="icon-button" onClick={() => setDirectoryOpen(false)}
-                            aria-label="Close station directory"><X size={17}/></button>
+                        <div className="directory-head">
+                            <div><h3>Selecciona una estación</h3>
+                            </div>
+                            <button className="icon-button" onClick={() => setDirectoryOpen(false)}
+                                    aria-label="Close station directory"><X size={17}/></button>
+                        </div>
+                        <div className="line-filters">
+                            <button className={lineFilter === 'all' ? 'selected' : ''}
+                                    onClick={() => setLineFilter('all')}>Todas
+                            </button>
+                            {lines.map((line) => <button key={line} className={lineFilter === line ? 'selected' : ''}
+                                                         onClick={() => setLineFilter(line)}><LineBadge
+                                line={line}/>{line}</button>)}</div>
+                        <div className="directory-list">{directoryStations.map((station) => <button key={station.id}
+                                                                                                    className={`directory-station ${selected?.id === station.id ? 'selected' : ''}`}
+                                                                                                    onClick={() => selectStation(station)}>
+                            <span>{station.name}</span><span className="line-stack">{station.lines.map((line) =>
+                            <LineBadge
+                                key={line} line={line}/>)}</span></button>)}</div>
+                    </div>}
                 </div>
-                <div className="line-filters">
-                    <button className={lineFilter === 'all' ? 'selected' : ''} onClick={() => setLineFilter('all')}>All
-                        lines
-                    </button>
-                    {lines.map((line) => <button key={line} className={lineFilter === line ? 'selected' : ''}
-                                                 onClick={() => setLineFilter(line)}><LineBadge
-                        line={line}/>{line}</button>)}</div>
-                <div className="directory-list">{directoryStations.map((station) => <button key={station.id}
-                                                                                            className={`directory-station ${selected?.id === station.id ? 'selected' : ''}`}
-                                                                                            onClick={() => selectStation(station)}>
-                    <span>{station.name}</span><span className="line-stack">{station.lines.map((line) => <LineBadge
-                    key={line} line={line}/>)}</span></button>)}</div>
-            </div>}
-                </div>
-            </div></header>
-        <section className="hero" id="top">
-            <div className="eyebrow"><span className="eyebrow-line"/> MADRID METRO · LIVE <span
-                className="eyebrow-line"/></div>
-            <h1>Next train,<br/><em>right now.</em></h1><p className="hero-copy">Search a station to see live arrivals,
-            line status, and your quickest way forward.</p>
-            <div className="search-wrap" id="search" ref={searchWrapRef}><Search size={18}/><input value={query}
-                                                                               onChange={(e) => setQuery(e.target.value)}
-                                                                               placeholder="Search station by name"
-                                                                               aria-label="Search for a station"
-                                                                               autoComplete="off"/>{query &&
-                <button className="clear-search" onClick={() => setQuery('')} aria-label="Clear search"><X size={16}/>
-                </button>}{matches.length > 0 &&
+                {matches.length > 0 &&
                 <div className="search-results">{matches.map((station) => <StationRow key={station.id} station={station}
                                                                                       favorite={favorites.includes(station.id)}
                                                                                       onSelect={() => selectStation(station)}
                                                                                       onToggle={() => toggleFavorite(station)}/>)}</div>}
             </div>
-            </section>
+
+        </section>
         <div className="content-grid">
             <aside className="side-column">
                 <section className="side-section" id="favorites">
                     <div className="section-heading">
-                        <div><span className="section-kicker">YOUR SHORTLIST</span><h2>Favorites</h2></div>
-                        <span>{favoriteStations.length}</span></div>
+                        <div><span className="section-kicker">TUS ESTACIONES</span><h2>Favoritas</h2></div>
+                        {favoriteStations.length > 0 && (<span>{favoriteStations.length}</span>)}</div>
                     {favoriteStations.length ?
                         <div className="station-list">{favoriteStations.map((s) => <StationRow key={s.id} station={s}
                                                                                                active={selected?.id === s.id}
                                                                                                favorite
                                                                                                onSelect={() => selectStation(s)}
                                                                                                onToggle={() => toggleFavorite(s)}/>)}</div> :
-                        <div className="quiet-state"><Heart size={16}/><p>Pin stations for quick access.</p></div>}
+                        <div className="quiet-state"><Heart size={16}/><p>Accede rápidamente a tus estaciones</p></div>}
                 </section>
+                <div className="section-heading">
+                    <div><span className="section-kicker">HISTORIAL</span><h2>Vistos recientemente</h2></div>
+                </div>
                 {recentStations.length > 0 && <section className="side-section">
-                    <div className="section-heading">
-                        <div><span className="section-kicker">HISTORY</span><h2>Recently viewed</h2></div>
-                    </div>
+
                     <div className="station-list">{recentStations.map((s) => <StationRow key={s.id} station={s}
                                                                                          active={selected?.id === s.id}
                                                                                          favorite={favorites.includes(s.id)}
@@ -251,7 +266,7 @@ export default function OnionMetro() {
                                                                                          onToggle={() => toggleFavorite(s)}/>)}</div>
                 </section>}
                 <div className="nearby-teaser"><MapPin size={17}/>
-                    <div><strong>Nearby stations</strong><span>Location access coming soon</span></div>
+                    <div><strong>Estaciones cercanas</strong><span>Disponible próximamente</span></div>
                     <ArrowRight size={16}/></div>
             </aside>
             <section className="station-panel" aria-live="polite">{loading ? <div className="panel-empty">
@@ -259,45 +274,87 @@ export default function OnionMetro() {
                 <h2>Loading network</h2><p>Getting Madrid ready.</p></div> : selected ? <>
                 <div className="station-header">
                     <div>
-                        <div className="station-kicker"><span className="live-pulse"/> LIVE ARRIVALS</div>
+                        <div className="station-kicker"><span className="live-pulse"/>LLEGADAS EN DIRECTO</div>
                         <h2>{selected.name}</h2>
-                        <div className="station-meta" style={{ display: "flex", gap: "12px", alignItems: "center" }}>
+                        {/*<div className="station-meta" style={{display: "flex", gap: "12px", alignItems: "center"}}>*/}
+                        {/*    {selected.lines.map((line) => (*/}
+                        {/*        <span key={line} style={{*/}
+                        {/*            display: "inline-block",*/}
+                        {/*            transform: "scale(1.8)",*/}
+                        {/*            transformOrigin: "left center",*/}
+                        {/*            margin: "0 4px"*/}
+                        {/*        }}>*/}
+                        {/*            <LineBadge line={line}/>*/}
+                        {/*        </span>*/}
+                        {/*    ))}*/}
+                        {/*    {selected.accessible &&*/}
+                        {/*        <span className="accessibility" ><Accessibility size={30} /> Accessible</span>}</div>*/}
+                        <div
+                            className="station-meta"
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                gap: "20px"
+                            }}
+                        >
                             {selected.lines.map((line) => (
-                                <span key={line} style={{ display: "inline-block", transform: "scale(1.8)", transformOrigin: "left center", margin: "0 4px" }}>
-                                    <LineBadge line={line} />
+                                <span
+                                    key={line}
+                                    style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                        transform: "scale(1.8)"
+                                    }}
+                                >
+                                    <LineBadge line={line}/>
                                 </span>
                             ))}
-                            {selected.accessible &&
-                            <span className="accessibility"><Accessibility size={14}/> Accessible</span>}</div>
+
+                            {selected.accessible && (
+                                <span
+                                    className="accessibility"
+                                    style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                        gap: "6px",
+                                        fontSize: "18px"
+                                    }}
+                                >
+                                    <Accessibility size={30}/>
+                                    Estación Accesible
+                                </span>
+                            )}
+                        </div>
                     </div>
+
                     <FavoriteButton active={favorites.includes(selected.id)} onClick={() => toggleFavorite(selected)}
                                     label={`${favorites.includes(selected.id) ? 'Remove' : 'Add'} ${selected.name} favorites`}/>
                 </div>
                 <div className="arrivals-heading">
-                    <div><span className="section-kicker">PREDICTIONS</span><h3>Next trains</h3>
-                        <p>{lastUpdated ? `Updated ${lastUpdated.toLocaleTimeString([], {
+                    <div><h3>Próximos trenes</h3>
+                        <p>{lastUpdated ? `Actualizado ${lastUpdated.toLocaleTimeString([], {
                             hour: '2-digit',
                             minute: '2-digit',
-                            second: '2-digit'
-                        })}` : 'Waiting for live data'}</p></div>
+                            second: '2-digit',
+                            hour12: false
+                        })}` : 'Esperando estimaciones'}</p></div>
                     <button className="refresh-button" onClick={refresh} disabled={refreshing}><RefreshCw size={15}
-                                                                                                          className={refreshing ? 'spin' : ''}/> {refreshing ? 'Updating' : 'Refresh'}
+                                                                                                          className={refreshing ? 'spin' : ''}/> {refreshing ? 'Cargando' : 'Actualizar'}
                     </button>
                 </div>
                 {error ?
-                    <div className="inline-error">Arrival data is unavailable. Try refreshing.</div> : arrivals.length ?
+                    <div className="inline-error">Datos de llegadas no disponibles. Prueba de nuevo.</div> : arrivals.length ?
                         <div className="arrivals-list">{arrivals.map((a, i) => <ArrivalRow key={`${a.line}-${i}`}
                                                                                            arrival={a}/>)}</div> :
-                        <div className="empty-arrivals"><TrainFront size={22}/><p>No arrival predictions right now.</p>
+                        <div className="empty-arrivals"><TrainFront size={22}/><p>No hay tiempos de llegadas ahora mismo.</p>
                         </div>}
-                <div className="panel-footer"><span><span
-                    className="status-dot"/> Live data from your metro API</span><span>Auto-refresh off</span></div>
+                {/*<div className="panel-footer"><span><span*/}
+                {/*    className="status-dot"/> Live data from your metro API</span><span>Auto-refresh off</span></div>*/}
             </> : <div className="panel-empty">
                 <div className="pulse-mark"><Search size={23}/></div>
-                <h2>Select a station</h2><p>Use the directory above or search to see your next trains.</p>
+                <h2>Selecciona una estación</h2><p>Usa el directorio o busca la estación para ver los próximos trenes</p>
             </div>}</section>
         </div>
-        <footer><span>ONION METRO</span><span>Independent real-time transit information for Madrid</span><span>Built for the next move <ChevronUp
-            size={14}/></span></footer>
+        <footer><span>ONION METRO</span><span>Información en tiempo real del Metro de Madrid</span><span>OnionProjects 2026</span></footer>
     </main>
 }

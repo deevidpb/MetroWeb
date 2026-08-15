@@ -6,9 +6,9 @@ import './globals.css'
 const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans' })
 
 export const metadata: Metadata = {
-  title: 'Onion Metro — Madrid arrivals',
-  description: 'A focused real-time Madrid Metro arrivals workspace.',
-  generator: 'Onion Metro',
+  title: 'Onion Metro',
+  description: 'Previsión de llegadas del Metro de Madrid en tiempo real',
+  generator: 'Onion',
 }
 
 export const viewport: Viewport = { colorScheme: 'dark', themeColor: '#0b1220' }

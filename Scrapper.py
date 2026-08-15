@@ -77,7 +77,7 @@ def scrapper():
                     "id": station_id,
                     "name": name,
                     "lines":[getLineName(linea_code)],
-                    "accesible": accessible
+                    "accessible": accessible
                 }
                 estaciones.append(station)
             else:

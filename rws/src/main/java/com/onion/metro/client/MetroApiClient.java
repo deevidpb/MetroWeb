@@ -13,13 +13,13 @@ public class MetroApiClient {
         this.webClient = webClient;
     }
 
-    public MetroResponse getTimes(String stationId){
-        return  webClient
+    public MetroResponse getTimes(String stationId) {
+        return webClient
                 .post()
                 .uri("/es/metro_next_trains/modal/{id}", stationId)
                 .retrieve()
-                .bodyToMono(MetroResponse[].class)
-                .map(responses -> responses[0])
+                .bodyToFlux(MetroResponse.class)
+                .next()
                 .block();
     }
 }
