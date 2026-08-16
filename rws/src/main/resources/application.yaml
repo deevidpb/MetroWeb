@@ -1,6 +1,17 @@
 spring:
   application:
-    name: rws
+    name: rws-metroweb
 
 metro:
   base-url: https://www.metromadrid.es
+  user-agent: curl/8.0
+  origin: https://www.metromadrid.es
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+
+frontend:
+  url: {FRONTEND_URL: http://localhost:3000}

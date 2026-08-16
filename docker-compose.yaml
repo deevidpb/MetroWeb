@@ -1,19 +1,16 @@
 services:
-  postgres:
-    image: postgres:17
-    container_name: metro-postgres
-    restart: unless-stopped
-
-    environment:
-      POSTGRES_DB: metro
-      POSTGRES_USER: metro
-      POSTGRES_PASSWORD: metro_dev_password
-
+  rws:
+    build:
+      context: ./rws
+    container_name: rws-metroweb
     ports:
-      - "5432:5432"
+      - "8080:8080"
 
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-
-volumes:
-  postgres_data:
+  spa:
+    build:
+      context: ./spa
+    container_name: spa-metroweb
+    ports:
+      - "3000:3000"
+    depends_on:
+      - rws

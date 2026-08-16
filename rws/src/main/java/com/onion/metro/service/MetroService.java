@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import tools.jackson.core.type.TypeReference;
 import tools.jackson.databind.ObjectMapper;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -17,22 +16,22 @@ import java.util.Map;
 public class MetroService {
 
     private final MetroApiClient metroClient;
+    private final ObjectMapper mapper;
 
     public MetroService(MetroApiClient metroClient) {
         this.metroClient = metroClient;
+        this.mapper = new ObjectMapper();
     }
 
     public List<Arrival> getArrival(String stationId){
         MetroResponse response = metroClient.getTimes(stationId);
         if (response == null){
-            return new ArrayList<>();
+            return List.of();
         }
         return TimesParse.parseArrivals(response.data());
     }
 
     public List<Station> getStations(){
-        ObjectMapper mapper = new ObjectMapper();
-
         return mapper.readValue(
                 getClass().getResourceAsStream("/stations.json"),
                 new TypeReference<>() {
@@ -41,7 +40,6 @@ public class MetroService {
     }
 
     public Map<String, List<String>> getLines(){
-        ObjectMapper mapper = new ObjectMapper();
         return mapper.readValue(
                 getClass().getResourceAsStream("/lines.json"),
                 new TypeReference<>() {

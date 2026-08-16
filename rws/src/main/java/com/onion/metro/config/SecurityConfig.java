@@ -16,8 +16,8 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(
             HttpSecurity http,
-            @Value("${FRONTEND_URL}") String frontUrl
-    ) throws Exception {
+            @Value("${frontend.url}") String frontUrl
+    ){
 
         http
                 .cors(cors -> cors.configurationSource(request -> {
@@ -27,7 +27,6 @@ public class SecurityConfig {
                     config.setAllowedOrigins(List.of(frontUrl));
                     config.setAllowedMethods(List.of(
                             "GET",
-                            "POST",
                             "OPTIONS"
                     ));
                     config.setAllowedHeaders(List.of("*"));
@@ -35,7 +34,9 @@ public class SecurityConfig {
                 }))
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
-                        .anyRequest().permitAll()
+                        .requestMatchers("/api/**", "/v3/api-docs/**", "/swagger-ui.html",
+                                "/swagger-ui/**", "/actuator/health").permitAll()
+                        .anyRequest().denyAll()
                 );
 
         return http.build();

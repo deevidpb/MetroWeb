@@ -11,6 +11,9 @@ import java.util.List;
 
 public class TimesParse {
 
+    private TimesParse() {
+    }
+
     public static List<Arrival> parseArrivals(String html) {
         Document document = Jsoup.parse(html);
         List<Arrival> arrivals = new ArrayList<>();
@@ -76,7 +79,7 @@ public class TimesParse {
             case "linea-12-metrosur" -> "Línea 12";
             case "ramal" -> "Ramal";
             case "ml1" -> "ML1";
-            default -> null;
+            default -> line;
         };
     }
 }

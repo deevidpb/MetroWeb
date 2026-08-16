@@ -1,0 +1,62 @@
+name: Backend
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: rws
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 21
+          cache: maven
+
+      - name: Build and test
+        run: mvn -B verify
+
+      - name: Start application
+        run: |
+          nohup mvn spring-boot:run > app.log 2>&1 &
+
+      - name: Wait for application startup
+        run: |
+          for i in {1..30}; do
+            if grep -qE "Started .* in .* seconds" app.log; then
+              echo "Application started successfully"
+              exit 0
+            fi
+
+            if grep -q "APPLICATION FAILED TO START" app.log; then
+              echo "Application failed to start"
+              cat app.log
+              exit 1
+            fi
+
+            sleep 2
+          done
+
+          echo "Application did not start within the expected time"
+          cat app.log
+          exit 1
+
+      - name: Check application
+        run: |
+          curl --fail --silent --show-error http://localhost:8080/actuator/health
+      - name: Show application logs
+        if: always()
+        run: cat app.log
