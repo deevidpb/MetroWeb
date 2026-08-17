@@ -32,6 +32,7 @@
         <sonar.projectName>rws-metroweb</sonar.projectName>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <sonar.organization>theonionproject</sonar.organization>
+        <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
         <sonar.coverage.exclusions>
             **/MetroApplication.java
         </sonar.coverage.exclusions>

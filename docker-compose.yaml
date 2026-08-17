@@ -5,6 +5,12 @@ services:
     container_name: rws-metroweb
     ports:
       - "8080:8080"
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8080/actuator/health" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
 
   spa:
     build:
@@ -13,4 +19,5 @@ services:
     ports:
       - "3000:3000"
     depends_on:
-      - rws
+      rws:
+        condition: service_healthy
