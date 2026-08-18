@@ -42,6 +42,7 @@ jobs:
             -u "$SONAR_TOKEN:" \
             -w "\nHTTP status: %{http_code}\n" \
             "https://sonarcloud.io/api/projects/search?organization=theonionproject&projects=rws-metroweb"
+        run: echo "$SONAR_TOKEN"
 
       - name: SonarCloud Analysis
         env:
