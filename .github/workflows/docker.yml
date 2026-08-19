@@ -40,7 +40,18 @@ jobs:
 
       - name: Smoke test frontend
         run: |
-          curl --fail --silent --show-error http://localhost:3000
+          for i in {1..30}; do
+            if curl --fail --silent --show-error http://localhost:3000; then
+              echo "Frontend is healthy"
+              exit 0
+            fi
+
+            sleep 2
+          done
+
+          echo "Frontend did not become healthy"
+          docker compose logs spa
+          exit 1
 
       - name: Show container status
         if: always()
